@@ -1,0 +1,241 @@
+ 
+ /*
+    pallette :
+    noir = #1E0F1C
+    rouge = #A7001E
+    vert claire ( presque blanc) = #E2E9C0
+    vert = #7AA95C
+    brun = #955149
+ */
+ html{
+    background-color:  #1E0F1C ;
+    font-family: 'EB Garamond', serif;
+ }
+
+ .navBar{
+    background-color: #A7001E;
+    position: fixed;
+  
+    padding: 0.4em;
+    width: 100%;
+    border-bottom: 1px solid #E2E9C0 ;
+    margin-left: 0;
+    z-index: +1;
+}
+.navBar li {
+    display: inline;
+}
+.navBar li a {
+    text-decoration: none;
+    color:#E2E9C0;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 0.4em ;
+    text-transform: uppercase;
+}
+.navBar li a:focus {
+    color: #1E0F1C;
+    text-decoration: overline;
+}
+.navBar li a:hover{
+    color: #1E0F1C;
+    text-decoration: overline;
+}
+.bars {
+    align-items: flex-end;
+    padding-left: 90%;
+    background-color: #A7001E;
+    width: 100%;
+    display: none;
+    color:#1E0F1C;
+}
+
+/*index.js*/
+header img {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+header h1{
+    padding-top: 3em;
+    color: #E2E9C0 ;
+    background-color: #1E0F1C;
+    width: 12em;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    position: absolute;
+    display: inline-flex;
+    top: 30%;
+    left: 50%;
+    padding: 0.5em;
+    margin-top: 3em;
+    width:auto;
+    background-color:#1E0F1C;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+form input{
+    padding: 1em;
+    color:  #1E0F1C;
+    font-size: 1em;
+    font-weight: 800;
+    font-family: 'EB Garamond', serif; 
+}
+form button {
+    background-color: #E2E9C0;
+    border: none;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 3px;
+}
+
+h2{
+    
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2em;
+        color: #E2E9C0;
+        font-family: 'EB Garamond', serif; 
+        font-size: 2em;
+        width: 8em; 
+}
+.culture-content{
+    background-color: #A7001E;
+    display: flex;
+    padding: 1.5em;
+  
+}
+.culture-content p{
+    border-top: 1px solid #E2E9C0;
+    border-bottom: 2px solid #E2E9C0;
+    color:#E2E9C0;
+    width:60%;
+    padding: 2em;
+    text-align:justify;
+    vertical-align:baseline;
+    font-size: 1.4em;
+}
+.culture-content img{
+    position: relative;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 1em;
+}
+
+.accomplishementsContent{
+    background-color: #1E0F1C;
+}
+.accomplishementsContent ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 1em;
+    justify-content: center;
+}
+.accomplishementsContent ul li {
+    padding : 3em;
+    margin: 1em;
+    box-shadow: 3px 5px #7AA95C;
+    width: 6em;
+    font-size: 1.3em;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: #7AA95C;
+    background-color: #E2E9C0;
+}
+.accomplishementsContent ul li i{
+    font-size:1.5em ;
+    padding:1em;
+    background-color: #1E0F1C;
+    width: 1em;
+    height: 1em;
+    border-radius: 50px;
+    box-shadow: 4px 3px #A7001E;
+}
+.accomplishementsContent ul li span{
+    color: #1E0F1C;
+    font-size: 2.5em;
+    width: 100%;
+    display: block;
+}
+
+footer{
+    background-color: #E2E9C0;
+    padding:0.4em;
+}
+footer p{
+    color: #7AA95C;
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+    width: 9em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer a{
+    text-decoration: none;
+    color:#1E0F1C ;
+    font-style: italic;
+    font-size: 1em;
+}
+
+@media only screen and (max-width:643px){
+    .culture-content img{
+        display: none;
+    }
+    .culture-content p{
+        width: 100%;
+        margin: 0;
+        padding: 0.2em;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    form{
+      padding: 3px !important;
+      margin-top: 0.5em;
+    }
+    .navBar{
+        padding:0.1em;
+    }
+    .navBar li a {
+        font-size: 1em;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (max-width: 472px){
+    .bars{
+        display: inline;
+    }
+    .navBar li {
+        display: none;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 15em;
+    }
+    .navBar li {
+        border-left: 1px solid #E2E9C0;
+    }
+
+    form{
+        display: inline;
+        margin-top:20%;
+    }
+
+    form button{
+        float: right;
+    }
+}
