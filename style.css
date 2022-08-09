@@ -15,7 +15,6 @@
  .navBar{
     background-color: #A7001E;
     position: fixed;
-  
     padding: 0.4em;
     width: 100%;
     border-bottom: 1px solid #E2E9C0 ;
@@ -50,7 +49,7 @@
     color:#1E0F1C;
 }
 
-/*index.js*/
+/*index.html*/
 header img {
     position:relative;
     width: 100%;
@@ -85,16 +84,22 @@ form input{
     font-weight: 800;
     font-family: 'EB Garamond', serif; 
 }
+form select {
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+    font-weight: 800;
+    padding:0.5em;
+}
 form button {
     background-color: #E2E9C0;
     border: none;
     font-size: 1em;
     padding: 0.8em;
+    margin-left: 0.2em;
     border-radius: 3px;
 }
 
 h2{
-    
         margin-left: auto;
         margin-right: auto;
         padding-top: 2em;
@@ -136,19 +141,18 @@ h2{
     text-align: center;
     flex-wrap: wrap;
     align-content: center;
-    padding: 1em;
+    padding: 3em;
     justify-content: center;
 }
 .accomplishementsContent ul li {
     padding : 3em;
     margin: 1em;
-    box-shadow: 3px 5px #7AA95C;
     width: 6em;
     font-size: 1.3em;
     font-family: 'EB Garamond', serif;
     font-weight: 600;
-    color: #7AA95C;
-    background-color: #E2E9C0;
+    color: #E2E9C0;
+    background-color: #a7001fa3;
 }
 .accomplishementsContent ul li i{
     font-size:1.5em ;
@@ -156,8 +160,7 @@ h2{
     background-color: #1E0F1C;
     width: 1em;
     height: 1em;
-    border-radius: 50px;
-    box-shadow: 4px 3px #A7001E;
+    border-radius: 100px;
 }
 .accomplishementsContent ul li span{
     color: #1E0F1C;
@@ -167,13 +170,13 @@ h2{
 }
 
 footer{
-    background-color: #E2E9C0;
+    background-color: #A7001E;
     padding:0.4em;
 }
 footer p{
-    color: #7AA95C;
+    color: #E2E9C0;
     font-family: 'EB Garamond', serif;
-    font-size: 1em;
+    font-size: 1.3em;
     width: 9em;
     text-align: center;
     margin-left: auto;
@@ -184,6 +187,9 @@ footer a{
     color:#1E0F1C ;
     font-style: italic;
     font-size: 1em;
+}
+footer a:hover{
+    letter-spacing: 1.5px;
 }
 
 @media only screen and (max-width:643px){
@@ -197,7 +203,6 @@ footer a{
         font-size: 1em;
     }
 }
-
 @media only screen and (max-width: 570px){
     form{
       padding: 3px !important;
@@ -206,6 +211,9 @@ footer a{
     .navBar{
         padding:0.1em;
     }
+    .navBar li {
+        border-left: 1px solid #E2E9C0;
+    }
     .navBar li a {
         font-size: 1em;
     }
@@ -213,22 +221,8 @@ footer a{
         font-size: 1.5em;
     }
 }
-
-
 @media only screen and (max-width: 472px){
-    .bars{
-        display: inline;
-    }
-    .navBar li {
-        display: none;
 
-        margin-left: auto;
-        margin-right: auto;
-        width: 15em;
-    }
-    .navBar li {
-        border-left: 1px solid #E2E9C0;
-    }
 
     form{
         display: inline;
@@ -238,4 +232,64 @@ footer a{
     form button{
         float: right;
     }
+}
+
+/*apply.html*/
+.applytitle{
+    width: 4.6em; 
+}
+.jobform{
+    background-color: #A7001E;
+    display: inline-block;
+    margin-top: 18em;
+    padding: 2em;
+    width: 40em;
+    border: 2px solid #E2E9C0;
+}
+.jobform label{
+    display: block;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    color: #1E0F1C;
+    background-color:#E2E9C0;
+    border: 1.5px solid #1E0F1C;
+    text-align: center;
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jobform label input{
+    padding: 0.3em;
+    margin: 1em;
+    border-radius: 3px;
+    border: 1px solid #1E0F1C;
+}
+.jobform button{
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-size: 1.1em;
+    display: block;
+    background-color: #1E0F1C;
+    color:#E2E9C0;
+    padding: 0.5em;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jobform button:hover{
+    background-color: #E2E9C0;
+    color: #1E0F1C;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width: 570px){
+   .jobform{
+    margin-top: 13em;
+    width:fit-content;
+   }
+}
+@media only screen and (max-width: 472px){
+    .jobform{
+        margin-top: 13em;
+        width:fit-content;
+       }
 }

@@ -23,20 +23,46 @@
                 <div class="bars">
                     <span class="fa fa-bars fa-lg"></span>
                 </div>
-                
             </nav>
             <header>
                 <h1>Find the right job for you !</h1>
                 <img src="./media/chairpic.jpg" alt="chair on street"/>
                 <form action= "search" class="searchBar">
-                    <input placeholder="Search a job" id="searchAJob" type="search" class="searchAJob" value =''>
-                    <label class="chooseALocation">
-                        <input name="chooseALocation" placeholder="Pick a location">
-                    </label>
+                    <input placeholder="Search a job" type="search">
+                    <select name="countries" name="countries" placeholder="Pick a location">
+                        <optgroup label="Europe">
+                            <option value="unitedkingdom">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="italia">Italie</option>
+                            <option value="spain">Spain</option>
+                            <option value="germany">Germany</option>
+                            <option value="switzerland">Switzerland</option>
+                        </optgroup>
+                        <optgroup value="America">
+                            <option value="canada">Canada</option>
+                            <option value="unitedstate">United State</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="costarica">Costa Rica</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="srilanka">Sri Lanka</option>
+                            <option value="laos">Laos</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="algeria">Algeria</option>
+                            <option value="cameroon">Cameroon</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="morocco">Morocco</option>
+                            <option value="tunisia">Tunisia</option>
+                        </optgroup>
+                    </select>
                     <button class="submit" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </header>
-
             <div class="culture">
                 <h2>Life at Small Ads</h2>
                 <div class="culture-content">
@@ -44,7 +70,6 @@
                     <img src="./media/culturepic.jpg" alt="workingpic"/>
                 </div>
             </div>
-            
             <div class="accomplishements">
                 <h2>Accomplishments</h2>
                 <div class="accomplishementsContent">
