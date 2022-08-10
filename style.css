@@ -68,7 +68,7 @@ header h1{
 form{
     position: absolute;
     display: inline-flex;
-    top: 30%;
+    top: 200px;
     left: 50%;
     padding: 0.5em;
     margin-top: 3em;
@@ -172,6 +172,9 @@ h2{
 footer{
     background-color: #A7001E;
     padding:0.4em;
+    margin-top: 1em;
+    bottom: 0px;
+    width: 100%;
 }
 footer p{
     color: #E2E9C0;
@@ -191,7 +194,6 @@ footer a{
 footer a:hover{
     letter-spacing: 1.5px;
 }
-
 @media only screen and (max-width:643px){
     .culture-content img{
         display: none;
@@ -236,33 +238,54 @@ footer a:hover{
 
 /*apply.html*/
 .applytitle{
-    width: 4.6em; 
+    width: 4.6em;
 }
 .jobform{
-    background-color: #A7001E;
+    width: 100%;
+    border: 2px solid transparent;
     display: inline-block;
-    margin-top: 18em;
-    padding: 2em;
-    width: 40em;
-    border: 2px solid #E2E9C0;
+    margin-top: 350px;
+}
+.jobform::before {    
+    content: "";
+    background-image: url('./media/textile-2918844_1920.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
 }
 .jobform label{
     display: block;
     font-family: 'EB Garamond', serif;
     font-weight: 700;
-    color: #1E0F1C;
-    background-color:#E2E9C0;
-    border: 1.5px solid #1E0F1C;
+    text-decoration: underline;
+    margin-top: 0.3em;
+    color: #E2E9C0;
+    border-bottom: 1px solid #E2E9C0;
     text-align: center;
-    width: 30em;
+    width: 40em;
     margin-left: auto;
     margin-right: auto;
+}
+.jobform label::before {    
+    content: "";
+    background-color: #A7001E;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    bottom: 0px;
+    left: 20%;
+    z-index: -1;
 }
 .jobform label input{
     padding: 0.3em;
     margin: 1em;
     border-radius: 3px;
-    border: 1px solid #1E0F1C;
+    border: 1px dotted #E2E9C0;
+    text-align: center;
 }
 .jobform button{
     font-family: 'EB Garamond', serif;
@@ -272,24 +295,87 @@ footer a:hover{
     background-color: #1E0F1C;
     color:#E2E9C0;
     padding: 0.5em;
-    width: 10em;
+    width: 11em;
     margin-left: auto;
     margin-right: auto;
 }
 .jobform button:hover{
     background-color: #E2E9C0;
     color: #1E0F1C;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
 }
 @media only screen and (max-width: 570px){
    .jobform{
-    margin-top: 13em;
+    margin-top: 320px;
     width:fit-content;
    }
 }
-@media only screen and (max-width: 472px){
-    .jobform{
-        margin-top: 13em;
-        width:fit-content;
-       }
+
+/*contact.html*/
+.contacttitle{
+    width: 5.2em ;
+}
+.contactform{
+    background-color: #A7001E;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    text-align: right;
+    color: #E2E9C0;
+    margin-top: 150px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 150px 250px;
+    grid-template-rows: 50px 50px 150px 50px;
+}
+.contactform .name{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+}
+.contactform .inputname{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0.5em;
+    padding-right: 2em;
+}
+.contactform .email{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 10px;
+
+}
+.contactform .inputemail{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0.5em;
+}
+.contactform .message{
+    grid-column: 1;
+    grid-row: 3;
+    padding: 10px;
+
+}
+.contactform textarea{
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 0.5em;
+    padding: 1em;
+    color:  #1E0F1C;
+    font-size: 0.8em;
+    font-weight: 800;
+    font-family: 'EB Garamond', serif; 
+}
+.contactform button{
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: 0.5em ;
+    background-color: #1E0F1C;
+    color: #E2E9C0;
+    font-weight: 800;
+    font-size: 1em;
+}
+.contactform button:hover{
+    background-color: #E2E9C0;
+    color: #1E0F1C;
+    letter-spacing: 2.5px;
 }
