@@ -382,3 +382,9 @@ footer a:hover{
     color: #1E0F1C;
     letter-spacing: 2.5px;
 }
+
+/*thankyou.html*/
+.thanks{
+    width: 18em;
+    text-align: center;
+}
