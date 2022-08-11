@@ -388,3 +388,11 @@ footer a:hover{
     width: 18em;
     text-align: center;
 }
+footer.contact{
+    position: absolute;
+    bottom: 0;
+}
+/*jobs.html*/
+.jobstitle{
+    width: 8.5em
+}
