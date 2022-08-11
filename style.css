@@ -10,6 +10,7 @@
  html{
     background-color:  #1E0F1C ;
     font-family: 'EB Garamond', serif;
+
  }
 
  .navBar{
@@ -83,12 +84,14 @@ form input{
     font-size: 1em;
     font-weight: 800;
     font-family: 'EB Garamond', serif; 
+    appearance: none;
 }
 form select {
     font-family: 'EB Garamond', serif;
     font-size: 1em;
     font-weight: 800;
     padding:0.5em;
+    appearance: none;
 }
 form button {
     background-color: #E2E9C0;
@@ -338,7 +341,7 @@ footer a:hover{
     margin-top: 0.5em;
     padding-right: 2em;
 }
-.contactform .email{
+.contactform .emaillabel{
     grid-column: 1;
     grid-row: 2;
     padding: 10px;

@@ -4,18 +4,18 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-        <title>Titre</title>
+        <title>Small Ads, contact us</title>
     </head>
     <body>
         <nav class="navBar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/jobs.html">Jobs</a></li>
+                <li><a href="../pages/apply.html">Apply</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -25,12 +25,13 @@
         <img >
         <section class="contact">
             <div class="contactcontent">
-                <form class="contactform">
+                <form class="contactform" id='contactform' action="https://formsubmit.co/audrey.f.wirth@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://smallads.surge.sh/pages/thankyou.html">
                     <label for="name" class="name">Your name :</label>
-                    <input class='inputname'id="name" name="name" type="text" required>
+                    <input class='inputname'id="name" name="name" type="text" required value="">
                     <br>
-                    <label for="email" class="email">Your email :</label>
-                    <input class="inputemail" name="email" type='email' required></input>
+                    <label for="email" class="emaillabel">Your email :</label>
+                    <input class="inputemail" id="email" name="email" type='email' required></input>
                     <br>
                     <label for="message" class="message">Message :</label>
                     <textarea name="message" type='text' required></textarea>
